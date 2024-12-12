@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://trackingjs.com/bower/tracking.js/build/tracking-min.js"></script>
+    <script src="https://trackingjs.com/bower/dat-gui/build/dat.gui.min.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"  ></script>
+
+</head>
+
+<body>
+
+    
+    <div class="gradient">
+    <div class="header" id="myHeader">
+        <img src="fazim.png">
+        <div id="name">
+            MUHAMMAD HAZIM | FATIN AIMI AYUNI</div>
+    </div>
+
+    
+        <div class="header1">
+            <div class="title">
+                Features Tracking for Web-based <br> AR Application</div>
+            <div class="test">
+                <a href="cameratrack.html"><button class="button-34"> Test Your AR
+                    </button></a>
+            </div>
+            <button class="button-85" onclick="window.location.href = '#processimage';">Generate Now !</button>
+        </div>
+
+        <br>
+        <div id="processimage">
+            <B>1. Generate Image Features</B>
+            <div id="canvas">
+
+                <br><br>
+                <div id='imageContainer'><canvas class="img-fluid" id="can1"></canvas></div>
+
+                <div id='imageContainer'><canvas class="img-fluid" id="can2"></canvas></div>
+
+                <div id='imageContainer'><canvas class="img-fluid" id="can3"></canvas></div>
+
+            </div>
+            <br>
+            <div id="uploadcontainer">
+                <div><input id="upload" type="file" hidden onchange="uploadimage()">
+                    <button class="button-31"><label for="upload">UPLOAD IMAGE</label></button>
+                </div>
+                <div><button class="button-32" onclick="greyscale()" id="greyscale">CONVERT GREYSCALE</button></div>
+                <div><button class="button-33" onclick="detectfeature()" id="feature">GENERATE FEATURE</button></div>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div id="result">
+            <b>2. Create Your Own AR Marker!</b>
+            <div class="result">
+            <div id='imageContainer4'></div>
+            <div class ="buttonr">
+            <button id="patt" class="button-35">Download Marker (.patt)</button>
+            <br><br>
+            <button id="png" class="button-36">Download Image (.png)</button></div>
+        </div></div>
+
+        <script
+            src='https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/threex-arpatternfile.js'></script>
+        <script src="script.js"></script>
+
+    </div>
+
+</body>
+
+</html>
